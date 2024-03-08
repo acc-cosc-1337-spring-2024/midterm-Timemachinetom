@@ -5,6 +5,7 @@ import unittest
 from src.question_a.question_a import test_config, use_local_variable
 from src.question_b.question_b import get_day_of_week
 from src.question_c.question_c import reverse_string
+from src.question_d.question_d import get_random_number
 
 class Test_Config(unittest.TestCase):
 
@@ -34,3 +35,6 @@ class Test_Config(unittest.TestCase):
     
     def test_reverse_string_2(self):
         self.assertEqual ("olleh", reverse_string("hello"))
+
+    def test_get_random_number(self):
+        self.assertIn (get_random_number(), range(1,6))
