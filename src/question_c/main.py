@@ -12,6 +12,6 @@ while exit != True:
     if string == "0":
         exit = True
 if exit == True:
-    print ("goodbye")
+    print ("Goodbye")
     
     

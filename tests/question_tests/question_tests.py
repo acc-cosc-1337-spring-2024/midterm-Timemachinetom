@@ -12,8 +12,9 @@ class Test_Config(unittest.TestCase):
     def test_question_a_config(self):
         self.assertEqual(True, test_config())
 
-    #def test_use_local_variable(self):
-        #self.assertEqual (100, use_local_variable(num))
+    def test_use_local_variable(self):
+        num = 100
+        self.assertEqual (100, use_local_variable(num))
     
     def test_get_day_of_week_1(self):
         self.assertEqual ("Invalid number", get_day_of_week(0))
